@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "DGR.FunPortfolio": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7044",
+      "launchBrowser": false
+    }
+  }
+}
