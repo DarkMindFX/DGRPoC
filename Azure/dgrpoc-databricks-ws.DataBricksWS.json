@@ -1,0 +1,74 @@
+{
+    "properties": {
+        "managedResourceGroupId": "/subscriptions/b3ea1aa0-7e19-419d-9743-219524fbdcae/resourceGroups/databricks-rg-dgrpoc-databricks-ws-eixdmrkesqbdk",
+        "parameters": {
+            "enableFedRampCertification": {
+                "type": "Bool",
+                "value": false
+            },
+            "enableNoPublicIp": {
+                "type": "Bool",
+                "value": false
+            },
+            "prepareEncryption": {
+                "type": "Bool",
+                "value": false
+            },
+            "publicIpName": {
+                "type": "String",
+                "value": "nat-gw-public-ip"
+            },
+            "requireInfrastructureEncryption": {
+                "type": "Bool",
+                "value": false
+            },
+            "resourceTags": {
+                "type": "Object",
+                "value": {
+                    "application": "databricks",
+                    "databricks-environment": "true"
+                }
+            },
+            "storageAccountName": {
+                "type": "String",
+                "value": "dbstoragebi5bc44tas47s"
+            },
+            "storageAccountSkuName": {
+                "type": "String",
+                "value": "Standard_GRS"
+            },
+            "vnetAddressPrefix": {
+                "type": "String",
+                "value": "10.139"
+            }
+        },
+        "provisioningState": "Succeeded",
+        "authorizations": [
+            {
+                "principalId": "9a74af6f-d153-4348-988a-e2672920bee9",
+                "roleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635"
+            }
+        ],
+        "createdBy": {
+            "oid": "40b5a5ff-89ca-461f-9876-896dce912b75",
+            "puid": "0003BFFD83DCC000",
+            "applicationId": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c"
+        },
+        "updatedBy": {
+            "oid": "40b5a5ff-89ca-461f-9876-896dce912b75",
+            "puid": "0003BFFD83DCC000",
+            "applicationId": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c"
+        },
+        "workspaceId": "6502638315614436",
+        "workspaceUrl": "adb-6502638315614436.16.azuredatabricks.net",
+        "createdDateTime": "2024-01-06T18:26:08.4732341Z"
+    },
+    "id": "/subscriptions/b3ea1aa0-7e19-419d-9743-219524fbdcae/resourceGroups/dgrpoc-rg/providers/Microsoft.Databricks/workspaces/dgrpoc-databricks-ws",
+    "name": "dgrpoc-databricks-ws",
+    "type": "Microsoft.Databricks/workspaces",
+    "sku": {
+        "name": "premium"
+    },
+    "location": "westeurope",
+    "tags": {}
+}

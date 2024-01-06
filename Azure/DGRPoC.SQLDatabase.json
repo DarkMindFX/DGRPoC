@@ -1,0 +1,42 @@
+{
+    "sku": {
+        "name": "GP_S_Gen5",
+        "tier": "GeneralPurpose",
+        "family": "Gen5",
+        "capacity": 1
+    },
+    "kind": "v12.0,user,vcore,serverless",
+    "properties": {
+        "collation": "SQL_Latin1_General_CP1_CI_AS",
+        "maxSizeBytes": 34359738368,
+        "status": "Online",
+        "databaseId": "fa4626c3-0644-437a-94cb-a4488101873b",
+        "creationDate": "2024-01-06T17:58:02.153Z",
+        "currentServiceObjectiveName": "GP_S_Gen5_1",
+        "requestedServiceObjectiveName": "GP_S_Gen5_1",
+        "catalogCollation": "SQL_Latin1_General_CP1_CI_AS",
+        "zoneRedundant": false,
+        "maxLogSizeBytes": 193273528320,
+        "earliestRestoreDate": "2024-01-06T19:03:53Z",
+        "readScale": "Disabled",
+        "currentSku": {
+            "name": "GP_S_Gen5",
+            "tier": "GeneralPurpose",
+            "family": "Gen5",
+            "capacity": 1
+        },
+        "autoPauseDelay": 60,
+        "currentBackupStorageRedundancy": "Local",
+        "requestedBackupStorageRedundancy": "Local",
+        "minCapacity": 0.5,
+        "maintenanceConfigurationId": "/subscriptions/b3ea1aa0-7e19-419d-9743-219524fbdcae/providers/Microsoft.Maintenance/publicMaintenanceConfigurations/SQL_Default",
+        "isLedgerOn": false,
+        "isInfraEncryptionEnabled": false,
+        "availabilityZone": "NoPreference"
+    },
+    "location": "polandcentral",
+    "tags": {},
+    "id": "/subscriptions/b3ea1aa0-7e19-419d-9743-219524fbdcae/resourceGroups/dgrpoc-rg/providers/Microsoft.Sql/servers/dgrpoc-sqlsrv/databases/DGRPoC",
+    "name": "DGRPoC",
+    "type": "Microsoft.Sql/servers/databases"
+}

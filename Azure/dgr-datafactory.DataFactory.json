@@ -1,0 +1,25 @@
+{
+    "name": "dgr-datafactory",
+    "id": "/subscriptions/b3ea1aa0-7e19-419d-9743-219524fbdcae/resourceGroups/dgrpoc-rg/providers/Microsoft.DataFactory/factories/dgr-datafactory",
+    "type": "Microsoft.DataFactory/factories",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "createTime": "2024-01-06T17:22:48.7525214Z",
+        "version": "2018-06-01",
+        "factoryStatistics": {
+            "totalResourceCount": 0,
+            "maxAllowedResourceCount": 0,
+            "factorySizeInGbUnits": 0,
+            "maxAllowedFactorySizeInGbUnits": 0
+        },
+        "publicNetworkAccess": "Enabled"
+    },
+    "eTag": "\"fa00606a-0000-5600-0000-65998c680000\"",
+    "location": "polandcentral",
+    "identity": {
+        "type": "SystemAssigned",
+        "principalId": "7be7f0e6-41c3-40ce-9664-659b46082566",
+        "tenantId": "064edd8d-d78d-47c6-b0fe-75a90ef1b1bb"
+    },
+    "tags": {}
+}

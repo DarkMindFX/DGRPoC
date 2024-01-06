@@ -1,0 +1,10 @@
+{
+    "id": "/subscriptions/b3ea1aa0-7e19-419d-9743-219524fbdcae/resourceGroups/dgrpoc-rg",
+    "name": "dgrpoc-rg",
+    "type": "Microsoft.Resources/resourceGroups",
+    "location": "polandcentral",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded"
+    }
+}

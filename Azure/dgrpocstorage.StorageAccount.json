@@ -1,0 +1,62 @@
+{
+    "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+    },
+    "kind": "StorageV2",
+    "id": "/subscriptions/b3ea1aa0-7e19-419d-9743-219524fbdcae/resourceGroups/dgrpoc-rg/providers/Microsoft.Storage/storageAccounts/dgrpocstorage",
+    "name": "dgrpocstorage",
+    "type": "Microsoft.Storage/storageAccounts",
+    "location": "polandcentral",
+    "tags": {},
+    "properties": {
+        "dnsEndpointType": "Standard",
+        "defaultToOAuthAuthentication": false,
+        "publicNetworkAccess": "Enabled",
+        "keyCreationTime": {
+            "key1": "2024-01-06T17:47:38.5191194Z",
+            "key2": "2024-01-06T17:47:38.5191194Z"
+        },
+        "allowCrossTenantReplication": false,
+        "privateEndpointConnections": [],
+        "minimumTlsVersion": "TLS1_2",
+        "allowBlobPublicAccess": true,
+        "allowSharedKeyAccess": true,
+        "networkAcls": {
+            "bypass": "AzureServices",
+            "virtualNetworkRules": [],
+            "ipRules": [],
+            "defaultAction": "Allow"
+        },
+        "supportsHttpsTrafficOnly": true,
+        "encryption": {
+            "requireInfrastructureEncryption": false,
+            "services": {
+                "file": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-01-06T17:47:38.9722481Z"
+                },
+                "blob": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-01-06T17:47:38.9722481Z"
+                }
+            },
+            "keySource": "Microsoft.Storage"
+        },
+        "accessTier": "Cool",
+        "provisioningState": "Succeeded",
+        "creationTime": "2024-01-06T17:47:38.4566180Z",
+        "primaryEndpoints": {
+            "dfs": "https://dgrpocstorage.dfs.core.windows.net/",
+            "web": "https://dgrpocstorage.z36.web.core.windows.net/",
+            "blob": "https://dgrpocstorage.blob.core.windows.net/",
+            "queue": "https://dgrpocstorage.queue.core.windows.net/",
+            "table": "https://dgrpocstorage.table.core.windows.net/",
+            "file": "https://dgrpocstorage.file.core.windows.net/"
+        },
+        "primaryLocation": "polandcentral",
+        "statusOfPrimary": "available"
+    }
+}
