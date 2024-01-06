@@ -1,10 +1,11 @@
 using System;
+using System.Text.Json;
 using DGR.DTO;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 
-namespace DGR.FunPortfolio
+namespace DGR.FunFilesProcess
 {
     public class FnProcessFile
     {
@@ -13,9 +14,10 @@ namespace DGR.FunPortfolio
         {
             log.LogInformation($"SplitPortfolio: {message}");
 
-            SplitPortfolioMsg msgObject = JsonSerializer.Deserialize<DGR.DTO.SplitPortfolioMsg>(message);
+            FileReadyMsg msgObject = JsonSerializer.Deserialize<DGR.DTO.FileReadyMsg>(message);
             if (msgObject != null)
             {
+
             }
         }
     }

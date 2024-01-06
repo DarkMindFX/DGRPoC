@@ -26,6 +26,31 @@ namespace DGR.DAL
 
         }
 
+        public DataTable GetPortfolioValues(long portfolioID, DateTime businessDate)
+        {
+            DataTable result = null;
+
+            using (SqlConnection conn = OpenConnection())
+            {
+                SqlCommand cmd = new SqlCommand("dbo.p_GetPortfolioValues", conn);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                var pPortfolioID = new SqlParameter("@PortfolioID", portfolioID);
+                var pBusinessDate = new SqlParameter("@BusinessDate", businessDate);
+
+                cmd.Parameters.Add(pPortfolioID);
+                cmd.Parameters.Add(pBusinessDate);
+
+                var ds = FillDataSet(cmd);
+
+                if (ds.Tables.Count >= 1)
+                {
+                    result = ds.Tables[0];
+                }
+            }
+
+            return result;
+        }
         
     }
 }
