@@ -4,7 +4,14 @@
       "commandName": "Project",
       "commandLineArgs": "--port 7211",
       "environmentVariables": {
-        "AzureStorage__ConnectionString": "AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;QueueEndpoint=http://127.0.0.1:10001/devstoreaccount1;TableEndpoint=http://127.0.0.1:10002/devstoreaccount1;"
+        "AzureStorage__ConnectionString": "DefaultEndpointsProtocol=https;AccountName=dgrpocstorage;AccountKey=BUhHSlgAMa/QZR6CMnrxZSbPwzcGk3XVDswfizeimcCyIWOIZuLsM9HwyOzQT2DOusaNq6vHzbcZ+AStpm2qhQ==;BlobEndpoint=https://dgrpocstorage.blob.core.windows.net/;QueueEndpoint=https://dgrpocstorage.queue.core.windows.net/;TableEndpoint=https://dgrpocstorage.table.core.windows.net/;FileEndpoint=https://dgrpocstorage.file.core.windows.net/;",
+        "AZ_TenantID": "064edd8d-d78d-47c6-b0fe-75a90ef1b1bb",
+        "AZ_AppID": "6047ffe5-99ca-4a6b-b386-adf5d07e43a3",
+        "AZ_AuthKey": "kmZ8Q~gxma4~6wKwUGcvckQHsaF0bj3HYmuh_b9p",
+        "AZ_SubscriptionID": "b3ea1aa0-7e19-419d-9743-219524fbdcae",
+        "AZ_ResourceGroup": "dgrpoc-rg",
+        "AZ_FactoryName": "dgr-datafactory",
+        "AZ_PipelineName": "dgr-pipeline"
       }
     }
   }
