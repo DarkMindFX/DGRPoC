@@ -30,17 +30,17 @@ namespace DGR.FunPortfolio
             _dal = dal;
         }
 
-        [FunctionName("fnStartDGRPortfolios")]
+        [FunctionName("FnStartDGRPortfolios")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "GET", "POST", Route = null)] HttpRequest req,
             ILogger log)
         {
+            log.LogInformation($"FnStartDGRPortfolios: {req.Body}");
             try
             {
                 var funHelper = new FunctionHelper();
 
                 string responseMessage = default;
-                string name = req.Query["name"];
 
                 string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
                 var msgObject = JsonConvert.DeserializeObject<StartDGRPortfoliosMsg>(requestBody);
@@ -71,6 +71,8 @@ namespace DGR.FunPortfolio
                             BusinessDate = msgObject.BusinessDate
                         };
 
+                        log.LogInformation($"Requesting process Portfolio: {splitMSg.PortfolioID}");
+
                         await queueClient.SendMessageAsync(JsonConvert.SerializeObject(splitMSg) );
                     }
 
@@ -81,6 +83,7 @@ namespace DGR.FunPortfolio
             }
             catch(Exception ex)
             {
+                log.LogError($"{ex.Message}\r\nStackTrace: {ex.StackTrace}");
                 var result = new ObjectResult(ex.Message)
                 {
                     StatusCode = (int)HttpStatusCode.InternalServerError
