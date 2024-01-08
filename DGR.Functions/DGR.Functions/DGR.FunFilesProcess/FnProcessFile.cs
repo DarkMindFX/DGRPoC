@@ -46,7 +46,7 @@ namespace DGR.FunFilesProcess
                     // preparing parameters
                     Dictionary<string, object> parameters = new Dictionary<string, object>();
                     parameters["file_path"] = msgObject.FilePath;
-                    parameters["business_date"] = msgObject.BusinessDate.ToString();
+                    parameters["business_date"] = $"{msgObject.BusinessDate.Year}-{msgObject.BusinessDate.Month}-{msgObject.BusinessDate.Day}";
                     parameters["portfolio_id"] = msgObject.PortfolioID.ToString();
 
                     // Running pipeline

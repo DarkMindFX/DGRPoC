@@ -1,7 +1,8 @@
-# Databricks notebook source
 from pyspark.sql.functions import from_utc_timestamp, date_format
 from pyspark.sql.types import TimestampType
 import os
+import time
+import random
 
 # Making sure storage mounted
 dbutils.fs.ls("/mnt/staging")
@@ -28,7 +29,14 @@ output_path = '/mnt/destination/dgr-data/Portfolio-' + portfolio_id + '.' + busi
 mode = 'overwrite'
 if os.path.exists(output_path):
     mode = 'append'
+else:
+    # random delay then checking again - this is to avoid collissions when more than one job tries to create files
+    random.seed(round(time.time() * 1000))
+    time.sleep(random.randint(5, 20)) 
+    if os.path.exists(output_path):
+        mode = 'append'
+        
 
 df.write.format('parquet').mode(mode).save(output_path)
 
-f'Result file: {output_path}'
+f'Written {file_path} to {output_path}'
